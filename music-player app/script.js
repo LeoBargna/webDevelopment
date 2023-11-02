@@ -24,7 +24,6 @@ let current = 0;
 let currentSong = songs[current].ele;
 songName.textContent = songs[current].audioName;
 songDescription.textContent = songs[current].audioDesc;
-// update image
 
 currentSong.onloadedmetadata = function (){
     progressBar.max = currentSong.duration;
@@ -57,8 +56,6 @@ progressBar.onchange = function(){
     controlIcon.classList.remove("fa-play");
 }
 
-// Changing songs
-
 nextIcon.addEventListener('click', ()=>{
     updateSong('next');
     playPause();
@@ -85,5 +82,4 @@ function updateSong(action) {
     currentSong = songs[current].ele;
     songName.innerText = songs[current].audioName;
     songDescription.textContent = songs[current].audioDesc;
-    // update image
 }
