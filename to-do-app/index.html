@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do app</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card-container">
+            <div class="input-container">
+                <h1>Aggiungi task</h1>
+                <input type="text" placeholder="aggiungi task" id="input">
+                <button id="input-button">aggiungi</button>
+                <h4 style="margin-top: 10px; font-weight: 600;">Seleziona colore</h4>
+                <select name="color-selection" id="select-color">
+                    <option value="red">rosso</option>
+                    <option value="orange">arancione</option>
+                    <option value="yellow">giallo</option>
+                </select>
+            </div>
+            <div class="task-container">
+                <h1>Task</h1>
+                <ul id="task-list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc app</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" id="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearScreen()" class="operator">
+                    <input type="button" value="DE" onclick="removeDigit()" class="operator">
+                    <input type="button" value="." onclick="addDigit('.')" class="operator">
+                    <input type="button" value="/" onclick="addDigit('/')" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="addDigit('7')">
+                    <input type="button" value="8" onclick="addDigit('8')"> 
+                    <input type="button" value="9" onclick="addDigit('9')">
+                    <input type="button" value="*" onclick="addDigit('*')" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="addDigit('4')">
+                    <input type="button" value="5" onclick="addDigit('5')">
+                    <input type="button" value="6" onclick="addDigit('6')">
+                    <input type="button" value="-" onclick="addDigit('-')" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="addDigit('1')">
+                    <input type="button" value="2" onclick="addDigit('2')">
+                    <input type="button" value="3" onclick="addDigit('3')">
+                    <input type="button" value="+" onclick="addDigit('+')" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="addDigit('00')">
+                    <input type="button" value="0" onclick="addDigit('0')">
+                    <input type="button" value="=" class="equal" onclick="calculate()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
