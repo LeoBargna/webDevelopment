@@ -6,6 +6,7 @@ let previousIcon = document.getElementById("prev-icon");
 let nextIcon = document.getElementById("next-icon");
 let songName = document.getElementById("song-name");
 let songDescription = document.getElementById("song-desc");
+let isPlaying = true;
 
 const audio1 = new Audio('media/make-it-loud.mp3');
 
@@ -82,4 +83,7 @@ function updateSong(action) {
     currentSong = songs[current].ele;
     songName.innerText = songs[current].audioName;
     songDescription.textContent = songs[current].audioDesc;
+    currentSong.play();
+
 }
+
