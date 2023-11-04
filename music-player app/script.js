@@ -6,18 +6,19 @@ let previousIcon = document.getElementById("prev-icon");
 let nextIcon = document.getElementById("next-icon");
 let songName = document.getElementById("song-name");
 let songDescription = document.getElementById("song-desc");
-let isPlaying = true;
+let reset = 0;
 
 const audio1 = new Audio('media/make-it-loud.mp3');
 
 const songs = [
-    {ele: audio1, audioName: 'make it loud', audioDesc: 'unknow author (20xx)', imgPath: '468-thumbnail.jpg'}
+    {ele: audio1, audioName: 'make it loud', audioDesc: 'unknow author (20xx)', imgPath: '468-thumbnail.jpg'},
+    {ele: audio1, audioName: 'make it loud2', audioDesc: 'unknow author2 (20xx)', imgPath: '468-thumbnail.jpg'}
 ];
 
 for (const song of songs){
     song.ele.addEventListener('ended', () => {
         updateSong('next');
-        playPauseSong();
+        playPause();
     })
 }
 
@@ -29,6 +30,7 @@ songDescription.textContent = songs[current].audioDesc;
 currentSong.onloadedmetadata = function (){
     progressBar.max = currentSong.duration;
     progressBar.value = currentSong.currentTime;
+    currentSong.play();
 }
 
 function playPause(){
@@ -83,7 +85,7 @@ function updateSong(action) {
     currentSong = songs[current].ele;
     songName.innerText = songs[current].audioName;
     songDescription.textContent = songs[current].audioDesc;
-    currentSong.play();
-
+    setTimeout(function () {      
+        currentSong.play();
+     }, 150);
 }
-
