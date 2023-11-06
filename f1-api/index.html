@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1-api</title>
+    <link rel="stylesheet" href="stile.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container" style="display: flex; flex-direction: column; margin-bottom: 20px;">
+        <h1>Formula 1 website</h1>
+        <h3>Powered by Ergast API (f1)</h3>
+    </div>
+      
+    <div class="container">
+        <div class="next-race">
+            <p class="subtitle">
+                Next race in: 
+            </p>
+            <div class="times">
+                <div id="days">00</div>
+                <div id="hours">00</div>
+                <div id="minutes">00</div>
+                <div id="seconds">00</div>
+            </div>
+            <div class="race-info">
+                <div>
+                    <div id="next-event"></div>
+                    <div id="next-track"></div>
+                </div>
+                <div class="e-flag">
+                    <img src="" id="next-flag">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="column">
+
+            <div class="driver-standings">
+                <div class="title">
+                    <p>Driver standings</p>
+                </div>
+                <div class="standing" id="driver-standing">
+                    <div class="driver-s">
+                        <p class="driver-position">pos</p>
+                        <p class="driver-name">name</p>
+                        <p class="driver-number">n.</p>
+                        <p class="driver-points">pts</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+
+            <div class="constructor-standing">
+                <div class="title">
+                    <p>Constructor standings</p>
+                </div>
+                <div class="standing" id="constructor-standing">
+                    <div class="constructor-s">
+                        <p class="constructor-position">pos</p>
+                        <p class="constructor-name">name</p>
+                        <p class="constructor-points">pts</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="column">
+            <div class="calendar" id="season-calendar">
+                <div class="c-title">Calendar</div>
+                <div class="c-row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
