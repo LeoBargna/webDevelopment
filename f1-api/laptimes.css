@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > *{
+    margin: 10px 40px 10px 40px;
+    padding: 10px;
+}
+
+.title{
+    background: darkred;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.container-select{
+    background: rgba(128, 128, 128, 0.2);
+}
+
+.container-select .desc{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+select{
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.send-button{
+    background: darkred;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table-title{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 50px;
+    border: 2px solid darkred;
+    padding: 10px 55px 10px 55px;
+    box-shadow: 8px 8px rgba(112, 3, 3, 0.753);
+    background: darkred;
+    color: white;
+}
+
+.lap-tables{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.column{
+    margin: 10px 30px 10px 30px;
+}
+
+.single-lap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    height: 32px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.45);
+    background: rgba(255, 0, 0, 0.1);
+    font-weight: bold;
+    padding: 20px;
+}
+
+.t-lapH, .t-positionH, .t-timeH{
+    font-size: 26px;
+    margin: 2px;
+}
+
+.t-lap, .t-position, .t-time{
+    font-size: 20px;
+    margin: 2px;
+}
+
+.t-lap{
+    width: 50px;
+}
+
+.t-position, .t-positionH, .t-lap, .t-lapH{
+    padding-left: 10px;
+    height: 32px;
+    width: 54px;
+    text-align: center;
+    display: inline-block;
+    line-height: 32px;
+}
+
+.t-time, .t-timeH{
+    width: 180px;
+    padding: 20px;
+}
+

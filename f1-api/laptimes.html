@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptimes</title>
+    <link rel="stylesheet" type="text/css" href="laptimes.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Lap times for every race since 1996</div>
+    </div>
+    <!-- selct container -->
+    <div class="container">
+        <div class="container-select">
+            <div class="desc">Season</div>
+            <select name="year" id="sel-year" size="5" onChange="loadSelects()">
+                <option value="none">---</option>
+            </select>
+        </div>
+
+        <div class="container-select">
+            <div class="desc">Round</div>
+            <select name="race" id="sel-round" size="5">
+                <option value="none">---</option>
+            </select>
+        </div>
+
+        <div class="container-select">
+            <div class="desc">Driver</div>
+            <select name="driver" id="sel-driver" size="5">
+                <option value="none">---</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="send-button" onclick="SearchLaptimes()">SEND</button>
+    </div>
+
+    <div class="container">
+        <div class="table-title">
+            Lap times will be shown below
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="lap-tables">
+            <div class="column">
+
+                <div class="single-lap">
+                    <div class="t-lapH">Lap</div>
+                    <div class="t-positionH">Pos</div>
+                    <div class="t-timeH">Time</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="laptimes.js"></script>
+</body>
+</html>
