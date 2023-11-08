@@ -59,6 +59,18 @@
         </div>
     </div>
 
+    <div class="container" id="container-compare">
+        <div class="container-select">
+            <div class="desc">Driver comparison</div>
+            <select name="compare-drivers" id="sel-compare" multiple="multiple" size="5" onchange="updateChart()"></select>
+        </div>
+        <canvas style="border: 2px solid red;" id="lapChart" width="300px" height="200px"></canvas>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="laptimes.js"></script>
+    
+
 </body>
 </html>

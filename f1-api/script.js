@@ -159,7 +159,6 @@ async function determineNextRace() {
 
     if (refDate) {
       console.log("Next race in:", refDate);
-
       return refDate;
     } else {
       console.log("No upcoming race found");
@@ -186,7 +185,7 @@ function updateCountdown() {
   if (asyncDate !== null) {
     const currentDate = new Date();
     const delta = asyncDate - currentDate;
-    const days = Math.ceil(delta / 86400000);
+    const days = Math.floor(delta / 86400000)+1;
     const hours = Math.floor(delta / 3600000) % 24 + 1; // The +1 is due to different time zone
     const minutes = Math.floor(delta / 60000) % 60;
     const seconds = Math.floor(delta / 1000) % 60;
