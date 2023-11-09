@@ -5,6 +5,40 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: darkred;
+}
+
+nav .app-title{
+  margin-left: 100px;
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li{
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px 20px 5px 20px;
+}
+
+a, a:visited, a:hover, a:active, a:before{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 .container{
     justify-content: center;
     align-items: center;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers</title>
+    <link rel="stylesheet" href="drivers.css">
+</head>
+<body>
+    <nav>
+        <div class="app-title">F1 stats</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="2023.html">Current season</a></li>
+            <li><a href="races.html">Races</a></li>
+            <li><a href="#">Drivers</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="title">Drivers information</div>
+    </div>
+    <div class="container">
+        <div class="container-select">
+            <div class="desc">Season</div>
+            <select name="year" id="sel-year" size="5" onChange="loadDrivers()">
+                <option value="none">---</option>
+            </select>
+        </div>
+
+        <div class="container-select">
+            <div class="desc">Driver</div>
+            <select name="race" id="sel-driver" size="5">
+                <option value="none">---</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="send-button" onclick="SearchDriverInfo()">Send</button>
+    </div>
+
+    <div class="container-driver">
+        <div class="driver-card">
+            <div class="column" id="col-image">
+                
+            </div>
+            <div class="column">
+                <div class="driver-info">
+                </div>
+                <div class="driver-achievements">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        please note that all the driver's data refers to his entire career and
+        are updated until the end of 2022 season
+    </div>
+
+    <script src="drivers.js"></script>
+
+</body>
+</html>
