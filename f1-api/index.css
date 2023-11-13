@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p a, p a:visited, p a:hover, p a:active, p a:before,
+.feature-list a:visited,  .feaure-list a:hover, .feature-list a:active, .feature-list a:before
+{
+    color: black; 
+    text-decoration: underline;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: darkred;
+}
+
+nav .app-title{
+  margin-left: 100px;
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li{
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px 20px 5px 20px;
+}
+
+nav ul li a, nav ul li a:visited, nav ul li a:hover, nav ul li a:active, nav ul li a:before{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.container{
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+.title{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.feature-list{
+    font-size: 21px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.feature-list > * > * {
+    margin: 10px;
+} 
+
+.column{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 450px;
+}
